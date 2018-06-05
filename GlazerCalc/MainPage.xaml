@@ -9,6 +9,18 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        <Button Content="Submit" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="167,481,0,0" FontSize="20" TabIndex="5"/>
+        <Slider x:Name="qtySlider" HorizontalAlignment="Left" Margin="70,325,0,0" VerticalAlignment="Top" Width="294" Header="Quantity:" FontSize="20" TabIndex="4"/>
+        <TextBox x:Name="Width" HorizontalAlignment="Right" Margin="0,57,887,0" Text="" VerticalAlignment="Top" InputScope="Number" PlaceholderText="" TabIndex="1" AutomationProperties.IsRequiredForForm="True" Width="65" Header="Height:" FontSize="20"/>
+        <TextBox x:Name="Height" HorizontalAlignment="Right" Margin="0,57,742,0" Text="" VerticalAlignment="Top" InputScope="Number" PlaceholderText="" TabIndex="2" AutomationProperties.IsRequiredForForm="True" Width="65" FontSize="20" Header="Width:"/>
+        <TextBlock HorizontalAlignment="Left" Margin="320,211,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <ComboBox HorizontalAlignment="Left" Margin="70,189,0,0" VerticalAlignment="Top" Width="180" Header="Tint Color:" FontSize="20" TabIndex="3">
+            <ComboBoxItem Content="Black" HorizontalAlignment="Center" Height="100" VerticalAlignment="Center" Width="100"/>
+            <ComboBoxItem Content="Brown" HorizontalAlignment="Center" Height="100" VerticalAlignment="Center" Width="100"/>
+            <ComboBoxItem Content="Blue" HorizontalAlignment="Center" Height="100" VerticalAlignment="Center" Width="100"/>
+        </ComboBox>
+        <TextBlock x:Name="qtyValue" Text="{Binding ElementName=qtySlider,Path=Value}" HorizontalAlignment="Left" Margin="406,347,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Width="25" Height="33"/>
+        <Border BorderBrush="Black" HorizontalAlignment="Left" Height="0" Margin="70,0,0,0" VerticalAlignment="Center" Width="920"/>
 
     </Grid>
 </Page>
