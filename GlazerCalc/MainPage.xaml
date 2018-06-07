@@ -19,9 +19,9 @@
         <TextBox x:Name="widthInput" HorizontalAlignment="Left" Margin="45,69,0,0" Text="" VerticalAlignment="Top" InputScope="Number" PlaceholderText="" TabIndex="2" AutomationProperties.IsRequiredForForm="True" Width="65" FontSize="20" Header="Width:" TextChanged="Text_Changed_Width" Canvas.ZIndex="1" Height="74" Grid.Row="1"/>
         <TextBlock HorizontalAlignment="Left" Margin="320,123,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Row="1" Height="20" Width="0"/>
         <ComboBox x:Name="tintInput" HorizontalAlignment="Left" Margin="45,195,0,0" VerticalAlignment="Top" Width="180" Header="Tint Color:" FontSize="20" TabIndex="3" Grid.Row="1" Height="74" SelectionChanged="Selection_Changed_Tint">
-            <ComboBoxItem Content="Black" HorizontalAlignment="Center" Height="100" VerticalAlignment="Center" Width="100"/>
-            <ComboBoxItem Content="Brown" HorizontalAlignment="Center" Height="100" VerticalAlignment="Center" Width="100"/>
-            <ComboBoxItem Content="Blue" HorizontalAlignment="Center" Height="100" VerticalAlignment="Center" Width="100"/>
+            <ComboBoxItem x:Name="comboItemBlack" Content="Black" HorizontalAlignment="Center" Height="100" VerticalAlignment="Center" Width="100"/>
+            <ComboBoxItem x:Name="comboItemBrown" Content="Brown" HorizontalAlignment="Center" Height="100" VerticalAlignment="Center" Width="100"/>
+            <ComboBoxItem x:Name="comboItemBlue" Content="Blue" HorizontalAlignment="Center" Height="100" VerticalAlignment="Center" Width="100"/>
         </ComboBox>
         <TextBlock x:Name="qtyValue" Text="{Binding ElementName=qtySlider,Path=Value}" HorizontalAlignment="Left" Margin="369,335,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Width="25" Height="33" Grid.Row="1"/>
         <Border BorderBrush="Black" HorizontalAlignment="Left" Height="0" Margin="70,232,0,0" VerticalAlignment="Top" Width="920" Grid.Row="1"/>
@@ -32,12 +32,12 @@
         </TextBlock>
         <TextBox x:Name="widthOutput" HorizontalAlignment="Left" Text="" VerticalAlignment="Top" Margin="570,133,0,0" Header="Width:" FontSize="20" Grid.Row="1" Canvas.ZIndex="1" Height="74" Width="64" IsReadOnly="True"/>
         <TextBox x:Name="heightOutput" HorizontalAlignment="Left" Margin="662,133,0,0" Grid.Row="1" Text="" VerticalAlignment="Top" Header="Height:" FontSize="20" Canvas.ZIndex="1" Height="74" Width="64" IsReadOnly="True"/>
-        <TextBox x:Name="dateOrdered" HorizontalAlignment="Left" Margin="570,428,0,0" Grid.Row="1" Text="" VerticalAlignment="Top" Header="Date Ordered:" FontSize="20" Width="256" Canvas.ZIndex="1" Height="74" IsReadOnly="True"/>
-        <TextBox x:Name="tintOutput" HorizontalAlignment="Left" Margin="762,133,0,0" Grid.Row="1" Text="" VerticalAlignment="Top" FontSize="20" Header="Tint:" Width="108" Canvas.ZIndex="1" Height="74" IsReadOnly="True"/>
+        <TextBox x:Name="dateOrdered" HorizontalAlignment="Left" Margin="570,393,0,0" Grid.Row="1" Text="" VerticalAlignment="Top" Header="Date Ordered:" FontSize="20" Width="256" Canvas.ZIndex="1" Height="74" IsReadOnly="True"/>
+        <TextBox x:Name="tintOutput" HorizontalAlignment="Left" Margin="760,133,0,0" Grid.Row="1" Text="" VerticalAlignment="Top" FontSize="20" Header="Tint:" Width="128" Canvas.ZIndex="1" Height="74" IsReadOnly="True"/>
         <Rectangle HorizontalAlignment="Left" Height="460" Margin="530,92,0,0" VerticalAlignment="Top" Width="460" StrokeThickness="2" Stroke="Black" Grid.Row="1"/>
-        <TextBox x:Name="woodLengthOutput" HorizontalAlignment="Left" Margin="568,284,0,0" Grid.RowSpan="2" Text="" VerticalAlignment="Top" FontSize="20" Canvas.ZIndex="1" Header="Length of Wood Frame:" Width="210" IsReadOnly="True"/>
+        <TextBox x:Name="woodLengthOutput" HorizontalAlignment="Left" Margin="570,248,0,0" Grid.RowSpan="2" Text="" VerticalAlignment="Top" FontSize="20" Canvas.ZIndex="1" Header="Length of Wood Frame:" Width="210" IsReadOnly="True"/>
         <TextBox x:Name="quantityOutput" HorizontalAlignment="Left" Margin="908,133,0,0" Grid.RowSpan="2" Text="" VerticalAlignment="Top" Header="Qty:" FontSize="20" IsReadOnly="True"/>
-        <TextBox x:Name="glassAreaOutput" HorizontalAlignment="Left" Margin="829,284,0,0" Grid.RowSpan="2" Text="" VerticalAlignment="Top" Header="Area of Glass:" FontSize="20" Width="128" IsReadOnly="True"/>
+        <TextBox x:Name="glassAreaOutput" HorizontalAlignment="Left" Margin="824,249,0,0" Grid.RowSpan="2" Text="" VerticalAlignment="Top" Header="Area of Glass:" FontSize="20" Width="128" IsReadOnly="True"/>
 
     </Grid>
 </Page>

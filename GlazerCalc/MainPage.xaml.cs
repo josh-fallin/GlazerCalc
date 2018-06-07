@@ -81,7 +81,11 @@ namespace GlazerCalc
                 // get height, width, tint and qty
                 width = Double.Parse(widthInput.Text);
                 height = Double.Parse(heightInput.Text);
-                tint = tintInput.SelectedValue.ToString();
+
+                // requires casting : here are two ways to do it
+                tint = ((ComboBoxItem)tintInput.SelectedItem).Content.ToString();
+                // tint = (tintInput.SelectedItem as ComboBoxItem).Content.ToString();
+
                 qty = Double.Parse(qtyValue.Text);
                 // calculate length of wood frame : woodLength = 2 * ( width + height ) * 3.25
                 woodLength = 2 * (width + height) * 3.25;
